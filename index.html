@@ -142,6 +142,42 @@
       filter: saturate(1.05) contrast(1.02);
     }
 
+/* Container width control */
+.container {
+  max-width: 1200px; /* keeps content from being too wide */
+  margin: 0 auto;    /* centers it */
+  padding: 0 20px;   /* adds breathing space left/right */
+}
+
+/* Hero layout */
+.hero {
+  padding: 100px 0; /* space top/bottom */
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Text and Image balance */
+.hero .headline {
+  font-size: 2rem;
+  line-height: 1.3;
+  max-width: 600px; /* prevent too long lines */
+}
+
+.hero .avatar img {
+  width: 280px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
     /* Sections */
     section { padding: 80px 0; }
     .section-head {
